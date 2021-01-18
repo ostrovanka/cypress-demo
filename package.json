@@ -1,0 +1,31 @@
+{
+   "name": "automation",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "cy:run": "cypress run --spec cypress/integration/care/*.js",
+      "cy:open": "cypress open",
+      "clean-reports": "rm -rf cypress/reports",
+      "test": "npx cypress run",
+      "merge-report": "npx mochawesome-merge cypress/reports/separate-reports/mochawesome*.json>cypress/reports/full-report.json",
+      "generate-report": "npx mochawesome-report-generator --reportDir cypress/reports cypress/reports/full-report.json"
+   },
+   "author": "Anna Ostrovska",
+   "license": "ISC",
+   "devDependencies": {
+      "JSON": "^1.0.0",
+      "cypress": "^6.2.0",
+      "cypress-intellij-reporter": "0.0.5",
+      "del": "^6.0.0",
+      "dotenv": "^8.2.0",
+      "eslint": "^7.16.0",
+      "eslint-plugin-cypress": "^2.11.2",
+      "fs": "0.0.1-security",
+      "mocha": "^8.2.1",
+      "mocha-param": "^2.0.1",
+      "mochawesome": "^6.2.1",
+      "mochawesome-merge": "^4.2.0",
+      "mochawesome-report-generator": "^5.1.0"
+   }
+}

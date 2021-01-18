@@ -1,0 +1,21 @@
+{
+   "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+   "reporterOptions": {
+      "reportDir": "cypress/reports/separate-reports",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+   },
+   "screenshotsFolder": "cypress/reports/assets",
+   "videosFolder": "cypress/reports/assets",
+   "videoUploadOnPasses" : false,
+   "experimentalRunEvents": true,
+   "viewportWidth": 1440,
+   "viewportHeight": 900,
+   "env" : {
+      "locales": "en_GB, pl_PL",
+      "server": "production"
+   }
+
+}
